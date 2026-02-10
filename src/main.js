@@ -1,21 +1,24 @@
 import lottie from 'lottie-web'
 import gsap from 'gsap'
+import animDataYouWin from '../public/lottie/you-win.json'
+import animDataYouLose from '../public/lottie/you-lose.json'
+import animDataYouDraw from '../public/lottie/you-draw.json'
 
 gsap.registerPlugin()
 
 let lottieContainerWin = document.querySelector(".lottie-container.win")
 let animationWin = lottie.loadAnimation({
-    container: lottieContainerWin, renderer: 'svg', loop: true, autoplay: true, path: '../public/lottie/you-win.json'
+    container: lottieContainerWin, renderer: 'svg', loop: true, autoplay: true, animationData: animDataYouWin
 })
 
 let lottieContainerLose = document.querySelector(".lottie-container.lose")
 let animationLose = lottie.loadAnimation({
-    container: lottieContainerLose, renderer: 'svg', loop: true, autoplay: true, path: '../public/lottie/you-lose.json'
+    container: lottieContainerLose, renderer: 'svg', loop: true, autoplay: true, animationData: animDataYouLose
 })
 
 let lottieContainerDraw = document.querySelector(".lottie-container.draw")
 let animationDraw = lottie.loadAnimation({
-    container: lottieContainerDraw, renderer: 'svg', loop: true, autoplay: true, path: '../public/lottie/you-draw.json'
+    container: lottieContainerDraw, renderer: 'svg', loop: true, autoplay: true, animationData: animDataYouDraw
 })
 
 const YOU_WIN_GAME = 'yasss, you win big time chungus'
