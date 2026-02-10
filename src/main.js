@@ -137,21 +137,27 @@ function constructNotification(userChoice, pcChoice, currentCase) {
 
 
     let previous = notificationArea.firstElementChild
-    console.log(previous)
 
     if (previous) {
 
         const anim = gsap.to(previous, {
-            opacity: 0, scale: 1, duration: 0.2, y: -15, ease: 'power4.out', onComplete: () => {
+            opacity: 0, scale: 1, duration: 0.15, y: -15, ease: 'power1.out', onComplete: () => {
                 previous.remove()
                 notificationArea.appendChild(notifBar)
                 gsap.set(notifBar, {
                     y: 15, opacity: 0, onComplete: () => {
-                        gsap.to(notifBar, {
-                            y: 0, opacity: 1, duration: 0.2, ease: 'power4.out'
-                        })
+                        if (roundsLeft) {
+                            gsap.to(notifBar, {
+                                y: 0, opacity: 1, duration: 0.15, ease: 'power4.out'
+                            })
+                        } else {
+                            gsap.to(notifBar, {
+                                y: 0, opacity: 0.3, duration: 0.2, ease: 'power2.out',
+                            })
+                        }
                     }
                 })
+
 
             }
         })

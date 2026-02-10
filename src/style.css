@@ -99,7 +99,7 @@ a {
 a.disabled {
     pointer-events: none;
     cursor: default;
-    opacity: 25%;
+    opacity: 0;
 }
 
 .rounds-left.disabled {
@@ -107,7 +107,7 @@ a.disabled {
 }
 
 .card.disabled {
-    opacity: 50%;
+    opacity: 25%;
 }
 
 .btn-reply {
