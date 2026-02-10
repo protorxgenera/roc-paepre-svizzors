@@ -26,8 +26,8 @@ const YOU_LOSE_GAME = 'you lost the game... today you a loser hahahahaha'
 const YOU_DRAW_GAME = 'nobody wins... you both losers af bro step up'
 
 const YOU_WIN_ROUND = 'you throw hands, no joke!'
-const YOU_LOSE_ROUND = 'fuck.. you done got stomped'
-const YOU_DRAW_ROUND = 'a fucking tie...'
+const YOU_LOSE_ROUND = 'so.. you done got stomped'
+const YOU_DRAW_ROUND = 'big ahh tie...'
 const USER_CASES = ['draw', 'win', 'lose']
 const PC_CASES = ['draw', 'lose', 'win']
 
